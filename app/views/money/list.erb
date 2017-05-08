@@ -1,0 +1,21 @@
+<center>
+<h1> 공지시항 & 숫자 게시판 입니다. </h1>
+<br>
+<br>
+<div="container">
+<% @allData.each do |value| %>
+제목: <%=value.title %> <br>
+내용: <%=value.price %> <br>
+작성시간: <%= value.created_at.in_time_zone("Asia/Seoul").strftime("%Y년 %m월 %d일 %H시 %M분 작성") %> <br>
+
+<hr>
+</div>
+<%end %>
+
+<a href="/"><strong> 메인 화면으로 돌아가기  </strong> </a>
+<br>
+<br>
+<br>
+
+
+<center>

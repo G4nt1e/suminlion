@@ -1,0 +1,14 @@
+<center>
+<h1> 일반 게시판 목록 입니다. </h1>
+</center>
+<div="container">
+<% @kk.each do |kk| %>
+제목: <%=kk.title2 %> <br>
+내용: <%=kk.price2 %> <br>
+작성시간: <%= kk.created_at.in_time_zone("Asia/Seoul").strftime("%Y년 %m월 %d일 %H시 %M분 작성") %> <br>
+
+<hr>
+</div>
+<%end %>
+
+<a href="/"> 처음으로</a>
